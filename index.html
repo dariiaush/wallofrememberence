@@ -1,231 +1,347 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./static/css/style.css" />
     <title>Стена памяти</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header_logo">
-                <img src="./static/img/logo.svg" alt="logo" />
-            </div>
-            <div class="header_text">
-                <h1>Стена памяти</h1>
-                <p>Тюменская область</p>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li class="menu_item"><a class="menu_link no-link" href="">О нас</a>
-                        <ul class="menu_dropdown menu_dropdown_us">
-                            <li><a href="">История поискового движения</a></li>
-                            <li><a href="">Поисковые отряды</a></li>
-                            <li><a href="">Проекты</a></li>
-                            <li><a href="">Новости</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
+      <header class="header">
+        <div class="header_logo">
+          <img src="./static/img/logo.svg" alt="logo" />
+        </div>
+        <div class="header_text">
+          <h1>Стена памяти</h1>
+          <p>Тюменская область</p>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li class="menu_item">
+              <a class="menu_link no-link" href="">О нас</a>
+              <ul class="menu_dropdown menu_dropdown_us">
+                <li><a href="">История поискового движения</a></li>
+                <li><a href="">Поисковые отряды</a></li>
+                <li><a href="">Проекты</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </li>
+            <li class="menu_item">
+              <a class="menu_link" href="">Народный фотоархив</a>
+            </li>
+            <li class="menu_item">
+              <a class="menu_link" href="">Книга памяти тюменской области</a>
+            </li>
+            <li class="menu_item">
+              <a class="menu_link no-link" href="">Узнать судьбу солдата</a>
+              <ul class="menu_dropdown menu_dropdown_soldier">
+                <li><a href="">Алгоритм поиска информации</a></li>
+                <li><a href="">Оставить заявку на уточнение судьбы</a></li>
+                <li><a href="">Ресурсы для поиска</a></li>
+              </ul>
+            </li>
+            <li class="menu_item">
+              <a class="menu_link no-link" href="">Материалы</a>
+              <ul class="menu_dropdown menu_dropdown_material">
+                <li class="menu_dropdown_item">
+                  <a href=""
+                    >Методические разработки по патриотическому воспитанию
+                    <img
+                      class="menu_dropdown_arrow"
+                      src="./static/img/arrow.svg"
+                      alt="arrow"
+                    />
+                  </a>
+                  <ul class="menu_dropdown_submenu submenu1">
+                    <li><a href="">Литературно-музыкальные композиции</a></li>
+                    <li><a href="">Игры и викторины</a></li>
+                    <li><a href="">Образовательные программы</a></li>
+                  </ul>
+                </li>
+                <li class="menu_dropdown_item">
+                  <a href=""
+                    >Тюмень в годы Великой Отечественной войны
+                    <img
+                      class="menu_dropdown_arrow"
+                      src="./static/img/arrow.svg"
+                      alt="arrow"
+                    />
+                  </a>
+                  <ul class="menu_dropdown_submenu submenu2">
+                    <li><a href="">Историческая справка</a></li>
+                    <li>
+                      <a href="">Реестр мемориальных зон Тюменской области</a>
                     </li>
-                    <li class="menu_item"><a class="menu_link" href="">Народный фотоархив</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Книга памяти тюменской области</a></li>
-                    <li class="menu_item"><a class="menu_link no-link" href="">Узнать судьбу солдата</a>
-                        <ul class="menu_dropdown menu_dropdown_soldier">
-                            <li><a href="">Алгоритм поиска информации</a></li>
-                            <li><a href="">Оставить заявку на уточнение судьбы</a></li>
-                            <li><a href="">Ресурсы для поиска</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu_item"><a class="menu_link no-link" href="">Материалы</a>
-                        <ul class="menu_dropdown menu_dropdown_material">
-                            <li class="menu_dropdown_item"><a href="">Методические разработки по патриотическому
-                                    воспитанию
-                                    <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow">
-                                </a>
-                                <ul class="menu_dropdown_submenu">
-                                    <li><a href="">Литературно-музыкальные композиции</a></li>
-                                    <li><a href="">Игры и викторины</a></li>
-                                    <li><a href="">Образовательные программы</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Тюмень в годы Великой Отечественной войны
-                                    <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow">
-                                </a>
-                                <ul class="menu_dropdown_submenu">
-                                    <li><a href="">Историческая справка</a></li>
-                                    <li><a href="">Реестр мемориальных зон Тюменской области</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Галерея
-                                    <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow">
-                                </a>
-                                <ul class="menu_dropdown_submenu">
-                                    <li><a href="">Фотогалерея</a></li>
-                                    <li><a href="">Видеогалерея</a></li>
-                                    <li><a href="">Фронтовые альбомы</a></li>
-                                    <li><a href="">Музыка</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu_item">
-                        <form action="" class="menu_item_search">
-                            <input type="text" placeholder="Поиск по сайту...">
-                            <input type="submit">
-                        </form>
-                        <a class="menu_link" href=""><img src="./static/img/search.svg" alt="search" /></a>
-                    </li>
+                  </ul>
+                </li>
+                <li class="menu_dropdown_item">
+                  <a href=""
+                    >Галерея
+                    <img
+                      class="menu_dropdown_arrow"
+                      src="./static/img/arrow.svg"
+                      alt="arrow"
+                    />
+                  </a>
+                  <ul class="menu_dropdown_submenu submenu3">
+                    <li><a href="">Фотогалерея</a></li>
+                    <li><a href="">Видеогалерея</a></li>
+                    <li><a href="">Фронтовые альбомы</a></li>
+                    <li><a href="">Музыка</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_item menu_item_search">
+              <form>
+                <input type="text" placeholder="Поиск по сайту..." />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+          <div
+            class="menu_adaptive"
+            onclick="document.getElementById('menuadaptive').style.display = 'block'"
+          ></div>
+          <div
+            class="menu_adaptive_link"
+            id="menuadaptive"
+            style="display: none;"
+          >
+            <a href="#">О нас</a>
+            <ul class="menu_dropdown">
+              <li><a href="">История поискового движения</a></li>
+              <li><a href="">Поисковые отряды</a></li>
+              <li><a href="">Проекты</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <a href="">Народный фотоархив</a>
+            <a href="">Книга памяти тюменской области</a>
+            <a href="#">Узнать судьбу солдата</a>
+            <ul class="menu_dropdown">
+              <li><a href="">Алгоритм поиска информации</a></li>
+              <li><a href="">Оставить заявку на уточнение судьбы</a></li>
+              <li><a href="">Ресурсы для поиска</a></li>
+            </ul>
+            <a href="#">Материалы</a>
+            <ul class="menu_dropdown">
+              <li>
+                <a href=""
+                  >Методические разработки по патриотическому воспитанию</a
+                >
+                <ul class="menu_dropdown_submenu">
+                  <li><a href="">Литературно-музыкальные композиции</a></li>
+                  <li><a href="">Игры и викторины</a></li>
+                  <li><a href="">Образовательные программы</a></li>
                 </ul>
-                <div class="menu_adaptive" onclick="document.getElementById('menuadaptive').style.display = 'block'">
-                </div>
-                <div class="menu_adaptive_link" id="menuadaptive" style="display: none;">
-                    <a href="#">О нас</a>
-                    <ul class="menu_dropdown">
-                        <li><a href="">История поискового движения</a></li>
-                        <li><a href="">Поисковые отряды</a></li>
-                        <li><a href="">Проекты</a></li>
-                        <li><a href="">Новости</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
-                    <a href="">Народный фотоархив</a>
-                    <a href="">Книга памяти тюменской области</a>
-                    <a href="#">Узнать судьбу солдата</a>
-                    <ul class="menu_dropdown">
-                        <li><a href="">Алгоритм поиска информации</a></li>
-                        <li><a href="">Оставить заявку на уточнение судьбы</a></li>
-                        <li><a href="">Ресурсы для поиска</a></li>
-                    </ul>
-                    <a href="#">Материалы</a>
-                    <ul class="menu_dropdown">
-                        <li><a href="">Методические разработки по патриотическому воспитанию</a>
-                            <ul class="menu_dropdown_submenu">
-                                <li><a href="">Литературно-музыкальные композиции</a></li>
-                                <li><a href="">Игры и викторины</a></li>
-                                <li><a href="">Образовательные программы</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Тюмень в годы Великой Отечественной войны</a>
-                            <ul class="menu_dropdown_submenu">
-                                <li><a href="">Историческая справка</a></li>
-                                <li><a href="">Реестр мемориальных зон Тюменской области</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Галерея</a>
-                            <ul class="menu_dropdown_submenu">
-                                <li><a href="">Фотогалерея</a></li>
-                                <li><a href="">Видеогалерея</a></li>
-                                <li><a href="">Фронтовые альбомы</a></li>
-                                <li><a href="">Музыка</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="block1">
-                <div class="block1_elem1">
-                    <span>Проект Тюменской региональной общественной организации “Областной поисковый центр</span>
-                    <h1>Стена памяти</h1>
-                    <p>Архив данных о погибших и пропавших без вести солдат и офицеров Красной Армии в Великой
-                        Отечественной
-                        Войне. Вы можете добавить информацию о вашем родственнике в архив</p>
-                    <button class="block1_button">Добавить человека</button>
-                </div>
-                <div class="block1_elem2">
-                    <img src="./static/img/fog.png" alt="fog">
-                    <div class="block1_elem2_links">
-                        <a href="#"><img src="./static/img/vk.png" alt="vk"></a>
-                        <a href="#"><img src="./static/img/facebook.png" alt="facebook"></a>
-                        <a href="#"><img src="./static/img/odnoklassniki.png" alt="odnoklassniki"></a>
-                        <a href="#"><img src="./static/img/instagram.svg" alt="instagram"></a>
-                    </div>
-                </div>
-                <div class="block1_elem3">
-                    <h2>Поиск человека</h2>
-                    <p>Поиск погибших и пропавших без вести солдат и офицеров Красной Армии</p>
-                    <form action="">
-                        <input type="text" class="block1_elem3_form" placeholder="Фамилия">
-                        <input type="text" class="block1_elem3_form" placeholder="Имя">
-                        <input type="text" class="block1_elem3_form" placeholder="Отчество">
-                        <input type="date" class="block1_elem3_form" placeholder="Год рождения">
-                        <button class="block1_elem3_form_button">Найти человека</button>
-                        <input type="text" class="block1_elem3_form" placeholder="Место рождения">
-                        <input type="text" class="block1_elem3_form" placeholder="Кем призван">
-                        <select class="block1_elem3_form">
-                            <option value="0">Звание, должность</option>
-                        </select>
-                        <input type="date" class="block1_elem3_form" placeholder="Дата призыва">
-                        <div class="block1_elem3_form_checkbox">
-                            <input type="checkbox" class="block1_elem3_form" name="memory-book" id="memory-book">
-                            <label for="memory-book">Искать в Книге Памяти</label>
-                        </div>
-                        <div class="block1_elem3_form_checkbox">
-                            <input type="checkbox" name="photo-archive" id="photo-archive">
-                            <label for="photo-archive">Искать в Народном фотоархиве</label>
-                        </div>
-                    </form>
-                    <span class="block1_elem3_search"><a href="#">Расширенный поиск</a></span>
-                    <span class="block1_elem3_search"><a href="#">Скрыть дополнительные поля</a></span>
-                </div>
-                <div class="block1_elem4">
-                    <h2>Наши герои</h2>
-                    <div class="block1_elem4_allsoldiers"><a href="">Все солдаты</a></div>
-                    <span>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
-                        сосредоточиться</span>
-                    <div class="block1_elem4_soldiers">
-                        <div class="block1_elem4_soldiers_card">
-                            <img src="./static/img/soldier1.png" alt="soldier1">
-                            <h4>Данилин</h4>
-                            <p>Иван Наумович</p>
-                            <p>1902 - 1974</p>
-                        </div>
-                        <div class="block1_elem4_soldiers_card">
-                            <img src="./static/img/soldier2.png" alt="soldier2">
-                            <h4>Негодин</h4>
-                            <p>Павел Васильевич</p>
-                            <p>12.07.1914 - 04.03.1996</p>
-                        </div>
-                        <div class="block1_elem4_soldiers_card">
-                            <img src="./static/img/soldier3.png" alt="soldier3">
-                            <h4>Федоненко</h4>
-                            <p>Николай Дмитриевич</p>
-                            <p>1912 года рождения</p>
-                        </div>
-                        <div class="block1_elem4_soldiers_card">
-                            <img src="./static/img/soldier4.png" alt="soldier4">
-                            <h4>Орешкин</h4>
-                            <p>Степан Михайлович</p>
-                            <p>1902 - 1958</p>
-                        </div>
-                        <div class="block1_elem4_soldiers_nav">
-                            <button class="block1_elem4_soldiers_left"></button>
-                            <button class="block1_elem4_soldiers_right"></button>
-                        </div>
-                    </div>
-                </div>
+              </li>
+              <li>
+                <a href="">Тюмень в годы Великой Отечественной войны</a>
+                <ul class="menu_dropdown_submenu">
+                  <li><a href="">Историческая справка</a></li>
+                  <li>
+                    <a href="">Реестр мемориальных зон Тюменской области</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Галерея</a>
+                <ul class="menu_dropdown_submenu">
+                  <li><a href="">Фотогалерея</a></li>
+                  <li><a href="">Видеогалерея</a></li>
+                  <li><a href="">Фронтовые альбомы</a></li>
+                  <li><a href="">Музыка</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="block1">
+          <div class="block1_elem1">
+            <p class="block1_elem1_p1">
+              Проект Тюменской региональной <br />общественной организации
+              "Областной поисковый центр"
+            </p>
+            <h1>Стена памяти</h1>
+            <p class="block1_elem1_p2">
+              Архив данных о погибших и пропавших без вести солдат и офицеров
+              Красной Армии в Великой Отечественной Войне.
+              <br />
+              Вы можете добавить информацию о вашем родственнике в архив
+            </p>
+            <button class="block1_button">Добавить человека</button>
+          </div>
+          <div class="block1_elem2">
+            <img src="./static/img/fog.png" alt="fog" />
+            <div class="block1_elem2_links">
+              <a href="#"><img src="./static/img/vk.png" alt="vk" /></a>
+              <a href="#"
+                ><img src="./static/img/facebook.png" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="./static/img/odnoklassniki.png" alt="odnoklassniki"
+              /></a>
+              <a href="#"
+                ><img src="./static/img/instagram.svg" alt="instagram"
+              /></a>
             </div>
-        </main>
-        <footer>
-            <div class="copyright">
-                &copy;&nbsp;Стена памяти&nbsp;
+          </div>
+          <div class="block1_elem3">
+            <h2>Поиск человека</h2>
+            <p>
+              Поиск погибших и пропавших без вести солдат и офицеров Красной
+              Армии
+            </p>
+            <form action="">
+              <div class="form1">
+                <input
+                  type="text"
+                  class="block1_elem3_form"
+                  placeholder="Фамилия"
+                /><input
+                  type="text"
+                  class="block1_elem3_form"
+                  placeholder="Имя"
+                /><input
+                  type="text"
+                  class="block1_elem3_form"
+                  placeholder="Отчество"
+                /><input
+                  type="text"
+                  class="block1_elem3_form"
+                  placeholder="Год рождения"
+                />
+                <button class="block1_elem3_form_button">
+                  Найти человека
+                  <img src="./static/img/Vector.svg" alt="arrow" />
+                </button>
+              </div>
+              <div class="form2">
+                <input
+                  type="text"
+                  class="block1_elem3_form"
+                  placeholder="Место рождения"
+                />
+                <input
+                  type="text"
+                  class="block1_elem3_form"
+                  placeholder="Кем призван"
+                />
+                <select class="block1_elem3_form">
+                  <option value="0">Звание, должность</option>
+                </select>
+                <input
+                  type="date"
+                  class="block1_elem3_form"
+                  placeholder="Дата призыва"
+                />
+              </div>
+              <div class="form3">
+                <div class="form3_checkbox">
+                  <div class="block1_elem3_form_checkbox">
+                    <input
+                      type="checkbox"
+                      class="block1_elem3_form"
+                      name="memory-book"
+                      id="memory-book"
+                    />
+                    <label for="memory-book">Искать в Книге Памяти</label>
+                  </div>
+                  <div class="block1_elem3_form_checkbox">
+                    <input
+                      type="checkbox"
+                      name="photo-archive"
+                      id="photo-archive"
+                    />
+                    <label for="photo-archive"
+                      >Искать в Народном фотоархиве</label
+                    >
+                  </div>
+                </div>
+                <div class="block1_elem3_search full_search">
+                  <a class="" href="#">Расширенный поиск</a>
+                  <div class="block1_elem3_search hide_search">
+                    <a class="" href="#">Скрыть дополнительные поля</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="block1_elem4">
+            <div class="soldier_head">
+              <h2>Наши герои</h2>
+              <a href="">Все солдаты</a>
             </div>
-            <div class="social">
-                <p>Присоединяйтесь к нам в соцсетях</p>
-
+            <p class="block1_elem4_p">
+              Давно выяснено, что при оценке дизайна и композиции читаемый текст
+              мешает сосредоточиться
+            </p>
+            <div class="block1_elem4_soldiers">
+              <div class="block1_elem4_soldiers_card">
+                <img src="./static/img/soldier1.png" alt="soldier1" />
+                <div class="soldier_descrip">
+                  <h4>Данилин</h4>
+                  <p>Иван Наумович</p>
+                  <p class="live_date">1902 - 1974</p>
+                </div>
+              </div>
+              <div class="block1_elem4_soldiers_card">
+                <img src="./static/img/soldier2.png" alt="soldier2" />
+                <div class="soldier_descrip">
+                  <h4>Негодин</h4>
+                  <p>Павел Васильевич</p>
+                  <p class="live_date">12.07.1914 - 04.03.1996</p>
+                </div>
+              </div>
+              <div class="block1_elem4_soldiers_card">
+                <img src="./static/img/soldier3.png" alt="soldier3" />
+                <div class="soldier_descrip">
+                  <h4>Федоненко</h4>
+                  <p>Николай Дмитриевич</p>
+                  <p class="live_date">1912 года рождения</p>
+                </div>
+              </div>
+              <div class="block1_elem4_soldiers_card">
+                <img src="./static/img/soldier4.png" alt="soldier4" />
+                <div class="soldier_descrip">
+                  <h4>Орешкин</h4>
+                  <p>Степан Михайлович</p>
+                  <p class="live_date">1902 - 1958</p>
+                </div>
+              </div>
+              <div class="block1_elem4_soldiers_nav">
+                <button class="block1_elem4_soldiers_left"></button>
+                <button class="block1_elem4_soldiers_right"></button>
+              </div>
             </div>
-            <div class="confidential">
-                Политика конфиденциальности
-            </div>
-            <div class="developer">
-                <img src="./static/img/developer.svg" alt="developer">
-                <p>Разработка - Компания Echo</p>
-            </div>
-
-        </footer>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="copyright">
+          &copy;&nbsp;Стена памяти&nbsp;
+        </div>
+        <div class="social">
+          <p>Присоединяйтесь к нам в соцсетях</p>
+        </div>
+        <div class="confidential">
+          Политика конфиденциальности
+        </div>
+        <div class="developer">
+          <img src="./static/img/developer.svg" alt="developer" />
+          <p>Разработка - Компания Echo</p>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
