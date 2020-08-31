@@ -229,12 +229,13 @@ body {
 
 .header .menu .menu_item_search button {
   font-size: 23px;
+  z-index: 3;
 }
 
 /* исправить кнопку */
 
-.header .menu .menu_item_search button:hover {
-  fill: #dc5a52;
+.header .menu .menu_item_search .fa-search:hover {
+  color: #dc5a52;
 }
 
 .header .menu_item_search:active .menu_item {
@@ -360,7 +361,8 @@ body {
 .main .block1_elem3 .form1 button,
 .main .block1_elem3 .form2 input,
 .main .block1_elem3 .form2 select,
-.main .block1_elem3 .form3 .block1_elem3_form_checkbox input {
+.main .block1_elem3 .form3 .block1_elem3_form_checkbox input,
+.main .block1_elem3 .block1_elem3_form_checkbox label::before {
   background: #ffffff;
   opacity: 0.9;
   box-shadow: 0px 6px 10px rgba(80, 52, 41, 0.15);
@@ -458,15 +460,6 @@ body {
   width: 30px;
 }
 
-.main .block1_elem3 .form3 .block1_elem3_form_checkbox {
-  display: flex;
-  align-items: center;
-}
-
-.main .block1_elem3 .form3 label {
-  margin-left: 7px;
-}
-
 .main .block1_elem3_search a {
   font-family: "Gotham Pro Regular";
   font-size: 16px;
@@ -489,6 +482,35 @@ body {
   display: none;
 }
 
+.main .block1_elem3 .block1_elem3_form_checkbox input {
+  display: none;
+}
+
+.main .block1_elem3 .block1_elem3_form_checkbox input:checked + label::before {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: #dc5a52;
+  border: 1.6px solid #dc5a52;
+  border-radius: 4px;
+}
+
+.main .block1_elem3 .block1_elem3_form_checkbox label::before {
+  content: "";
+  color: #000;
+  display: inline-block;
+  font: 20px/30px FontAwesome;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-image: initial;
+  position: relative;
+  text-indent: 0px;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 1.6px solid #e3e3e3;
+}
+
 /* .main .block1_elem3 .form3 .full_search:hover {
   display: none;
 }
@@ -496,7 +518,6 @@ body {
 .main .block1_elem3 .form3 .full_search:hover .hide_search {
   display: block;
 } */
-
 
 .main .block1 .block1_elem4 {
   position: absolute;
@@ -561,7 +582,12 @@ body {
   margin: 20px;
 }
 
-.main .block1 .block1_elem4 .block1_elem4_soldiers_card .soldier_descrip .live_date {
+.main
+  .block1
+  .block1_elem4
+  .block1_elem4_soldiers_card
+  .soldier_descrip
+  .live_date {
   font-family: "Gotham Pro Bold";
   font-size: 15px;
   line-height: 19px;
@@ -576,4 +602,54 @@ body {
 .main .block1 .block1_elem4 .block1_elem4_soldiers_nav {
   position: absolute;
   display: none;
+}
+
+.main .block2 {
+  height: 2500px;
+  background: url(../img/background2.png);
+  color: #4b4343;
+  font-family: "Gotham Pro Regular";
+  position: relative;
+}
+
+.main .block2 .bl2_el1 {
+  margin-top: 100px;
+  text-align: center;
+  position: absolute;
+}
+
+.main .block2 .bl2_el1 h4 {
+  font-size: 36px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  width: 100%;
+  font-family: "Gotham Pro Bold";
+}
+
+.main .block2 .bl2_el1 .logo2 {
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.main .block2 .bl2_el1 .logo2 img {
+  width: 74px;
+  height: 74px;
+}
+
+.main .block2 .bl2_el1 .logo2 .logo2_text {
+  color: #dc5a52;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.main .block2 .bl2_el1 .logo2 .logo2_text h4 {
+  font-size: 28px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.main .block2 .bl2_el1 .logo2 .logo2_text p {
+  font-size: 14px;
+  line-height: 13px;
 }
