@@ -14,19 +14,23 @@
 
   <body>
     <div class="back">
-      <header class="header">
-        <div class="header_logo">
+      <header>
+        <div class="position">
+          <div class="header">
+            <div class="head">
+              <div class="header_logo">
           <img src="./static/img/logo.svg" alt="logo" />
         </div>
         <div class="header_text">
           <h1>Стена памяти</h1>
           <p>Тюменская область</p>
         </div>
+            </div>
         <nav>
           <ul class="menu">
-            <li class="menu_item">
+            <li class="menu_item hide">
               <a class="menu_link no-link" href="">О нас</a>
-              <ul class="menu_dropdown menu_dropdown_us">
+              <ul class="menu_dropdown menu_dropdown_us hide">
                 <li><a href="">История поискового движения</a></li>
                 <li><a href="">Поисковые отряды</a></li>
                 <li><a href="">Проекты</a></li>
@@ -34,23 +38,23 @@
                 <li><a href="">Контакты</a></li>
               </ul>
             </li>
-            <li class="menu_item">
+            <li class="menu_item hide">
               <a class="menu_link" href="">Народный фотоархив</a>
             </li>
-            <li class="menu_item">
+            <li class="menu_item hide">
               <a class="menu_link" href="">Книга памяти тюменской области</a>
             </li>
-            <li class="menu_item">
+            <li class="menu_item hide">
               <a class="menu_link no-link" href="">Узнать судьбу солдата</a>
-              <ul class="menu_dropdown menu_dropdown_soldier">
+              <ul class="menu_dropdown menu_dropdown_soldier hide">
                 <li><a href="">Алгоритм поиска информации</a></li>
                 <li><a href="">Оставить заявку на уточнение судьбы</a></li>
                 <li><a href="">Ресурсы для поиска</a></li>
               </ul>
             </li>
-            <li class="menu_item drop_pos">
+            <li class="menu_item drop_pos hide">
               <a class="menu_link no-link" href="">Материалы</a>
-              <ul class="menu_dropdown menu_dropdown_material">
+              <ul class="menu_dropdown menu_dropdown_material hide">
                 <li class="menu_dropdown_item">
                   <a href=""
                     >Методические разработки по патриотическому воспитанию
@@ -101,52 +105,79 @@
               </ul>
             </li>
             <li class="menu_item menu_item_search">
-              <form>
-                <input type="text" placeholder="Поиск по сайту..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
             </li>
           </ul>
+          <form>
+                <input type="text" placeholder="Поиск по сайту..." />
+                <button class="btn_active" type="submit"></i></button>
+            </form>
           <div
             class="menu_adaptive"
             onclick="document.getElementById('menuadaptive').style.display = 'block'"
           ></div>
-          <div
-            class="menu_adaptive_link"
-            id="menuadaptive"
-            style="display: none"
-          >
-            <a href="#">О нас</a>
+        </nav></div>
+      </div>
+      <ul class="menu_adaptive_link" id="menuadaptive" style="display: none">
+        <li><a href="#">О нас <img
+              class="menu_dropdown_arrow"
+              src="./static/img/arrow.svg"
+              alt="arrow"
+            /></a>
             <ul class="menu_dropdown">
               <li><a href="">История поискового движения</a></li>
               <li><a href="">Поисковые отряды</a></li>
               <li><a href="">Проекты</a></li>
               <li><a href="">Новости</a></li>
               <li><a href="">Контакты</a></li>
-            </ul>
-            <a href="">Народный фотоархив</a>
-            <a href="">Книга памяти тюменской области</a>
-            <a href="#">Узнать судьбу солдата</a>
+            </ul></li>
+        <li><a href="">Народный фотоархив <img
+              class="menu_dropdown_arrow no-transform"
+              src="./static/img/arrow.svg"
+              alt="arrow"
+            /></a></li>
+        <li><a href="">Книга памяти тюменской области <img
+              class="menu_dropdown_arrow no-transform"
+              src="./static/img/arrow.svg"
+              alt="arrow"
+            /></a></li>
+        <li><a href="#">Узнать судьбу солдата <img
+              class="menu_dropdown_arrow"
+              src="./static/img/arrow.svg"
+              alt="arrow"
+            /></a>
             <ul class="menu_dropdown">
               <li><a href="">Алгоритм поиска информации</a></li>
               <li><a href="">Оставить заявку на уточнение судьбы</a></li>
               <li><a href="">Ресурсы для поиска</a></li>
-            </ul>
-            <a href="#">Материалы</a>
+            </ul></li>
+        <li><a href="#">Материалы <img
+              class="menu_dropdown_arrow"
+              src="./static/img/arrow.svg"
+              alt="arrow"
+            /></a>
             <ul class="menu_dropdown">
               <li>
-                <a href=""
-                  >Методические разработки по патриотическому воспитанию</a
+                <a class="menu_drop_bold" href=""
+                  >Методические разработки по патриотическому воспитанию
+                  <img
+              class="menu_dropdown_arrow"
+              src="./static/img/arrow.svg"
+              alt="arrow"
+            /></a
                 >
-                <ul class="menu_dropdown_submenu">
+                <ul class="submenu">
                   <li><a href="">Литературно-музыкальные композиции</a></li>
                   <li><a href="">Игры и викторины</a></li>
                   <li><a href="">Образовательные программы</a></li>
                 </ul>
               </li>
               <li>
-                <a href="">Тюмень в годы Великой Отечественной войны</a>
-                <ul class="menu_dropdown_submenu">
+                <a class="menu_drop_bold" href="">Тюмень в годы Великой Отечественной войны <img
+                  class="menu_dropdown_arrow"
+                  src="./static/img/arrow.svg"
+                  alt="arrow"
+                /></a>
+                <ul class="submenu">
                   <li><a href="">Историческая справка</a></li>
                   <li>
                     <a href="">Реестр мемориальных зон Тюменской области</a>
@@ -154,17 +185,20 @@
                 </ul>
               </li>
               <li>
-                <a href="">Галерея</a>
-                <ul class="menu_dropdown_submenu">
+                <a class="menu_drop_bold" href="">Галерея <img
+                  class="menu_dropdown_arrow"
+                  src="./static/img/arrow.svg"
+                  alt="arrow"
+                /></a>
+                <ul class="submenu">
                   <li><a href="">Фотогалерея</a></li>
                   <li><a href="">Видеогалерея</a></li>
                   <li><a href="">Фронтовые альбомы</a></li>
                   <li><a href="">Музыка</a></li>
                 </ul>
               </li>
-            </ul>
-          </div>
-        </nav>
+            </ul></li>    
+          </ul>
       </header>
       <div class="block1">
         <div class="block1_elem1 position">
@@ -182,7 +216,7 @@
           <button class="block1_button">Добавить человека</button>
         </div>
         <div class="block1_elem2">
-          <img src="./static/img/fog.png" alt="fog" />
+          <img src="./static/img/fogperson.png" alt="fog" />
           <div class="block1_elem2_links">
             <a href="#" class="vk"></a>
             <a href="#" class="facebook"></a>
@@ -225,7 +259,7 @@
                 class="block1_elem3_form"
                 placeholder="Место рождения"
               />
-              <input
+              <div class="form_pos"><input
                 type="text"
                 class="block1_elem3_form"
                 placeholder="Кем призван"
@@ -237,7 +271,7 @@
                 type="date"
                 class="block1_elem3_form"
                 placeholder="Дата призыва"
-              />
+              /></div>
             </div>
             <div class="form3">
               <div class="form3_checkbox">
