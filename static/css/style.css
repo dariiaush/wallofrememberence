@@ -91,105 +91,95 @@ header {
   position: relative;
 }
 
-.header .head {
+.logo {
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-.header .header_text {
+.logo .logo_text {
   margin-left: 10px;
   color: #dc5a52;
+  text-align: left;
 }
 
-.header .header_text h1 {
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 27px;
-  text-transform: uppercase;
-  margin: auto;
-  font-family: "Gotham Pro Bold";
-}
-
-.header .header_text p {
+.logo .logo_p {
   font-size: 14px;
   line-height: 13px;
 }
 
-.header .menu {
+.menu {
   margin-left: 32px;
   display: flex;
   align-items: center;
   z-index: 2;
 }
 
-.header .menu .menu_item {
+.menu .menu_item {
   margin-right: 40px;
   border-bottom: 4px solid transparent;
   height: 76px;
   line-height: 76px;
 }
 
-.header .menu .menu_item_search {
+.menu .menu_search {
   margin-right: 0;
   width: 44px;
 }
 
-.header .menu .menu_link {
+.menu .menu_link {
   font-size: 12px;
   line-height: 11px;
   text-transform: uppercase;
 }
 
-.menu_dropdown,
-.menu_dropdown .submenu {
+.menu .menu_drop,
+.submenu {
   display: none;
 }
 
-.header .menu .menu_item:hover,
+.menu .menu_item:hover,
 .menu_adaptive:hover {
   border-bottom: 4px solid #dc5a52;
 }
 
-.header .menu .menu_item_search:hover {
+.menu .menu_search:hover {
   border-bottom: 4px solid transparent;
 }
 
-.header .menu .drop_pos {
+.menu .drop_pos {
   position: relative;
 }
 
-.header .menu .menu_item:hover .menu_dropdown,
+.menu .menu_item:hover .menu_drop,
 .menu_adapt {
   display: block;
   position: absolute;
   padding-top: 14px;
-  z-index: 5;
 }
 
-/* body:focus .menu_adapt {
-  display: none;
-} */
+.menu .menu_item:hover .menu_drop {
+  z-index: 10;
+}
 
-.header .menu .menu_item .menu_dropdown li,
-.menu_adaptive_link {
+.menu .menu_drop_back {
   background: #f5f1eb;
 }
 
-.header .menu .menu_item .menu_dropdown_us {
+.menu .menu_drop1 {
   width: 370px;
 }
 
-.header .menu .menu_item .menu_dropdown_soldier {
+.menu .menu_drop2 {
   width: 350px;
 }
 
-.header .menu .menu_item .menu_dropdown_material {
+.menu .menu_drop3 {
   width: 545px;
   right: 0;
 }
 
-.header .menu .menu_item .menu_dropdown a,
+.menu .menu_drop_link,
 .menu_adaptive_link a {
   font-weight: bold;
   font-size: 12px;
@@ -199,38 +189,38 @@ header {
   padding: 15px 30px;
 }
 
-.header .menu .menu_item .menu_dropdown_material a {
+.menu .menu_drop3 .menu_drop_link {
   display: flex;
   justify-content: flex-end;
 }
 
-.menu_dropdown_arrow {
+.menu .menu_drop_arrow {
   margin-left: 20px;
   transition: 0s 180s;
 }
 
-.header .menu .menu_item .menu_dropdown a:hover {
+.menu .menu_item .menu_drop_link:hover {
   background: #f6f6f6;
   color: #dc5a52;
 }
 
-.header .menu .menu_item .menu_dropdown a:hover .menu_dropdown_arrow,
-.menu_adaptive_link a:hover .menu_dropdown_arrow {
+.menu .menu_item .menu_drop_link:hover .menu_drop_arrow,
+.menu_adaptive_link a:hover .menu_drop_arrow {
   transform: rotate(90deg);
   transition: 0s;
 }
 
-.header .menu .menu_item .menu_dropdown .menu_dropdown_submenu a {
+.menu .menu_item .menu_drop .menu_drop_submenu a {
   text-transform: none;
   display: none;
   text-align: end;
 }
 
-.header .menu .menu_item .menu_dropdown .menu_dropdown_item:hover .submenu1 a,
-.header .menu .menu_item .menu_dropdown .menu_dropdown_item:hover .submenu2 a,
-.header .menu .menu_item .menu_dropdown .menu_dropdown_item:hover .submenu3 a,
-.menu_adaptive_link li:hover .menu_dropdown,
-.menu_adaptive_link .menu_dropdown li:hover .submenu {
+.menu .menu_item .menu_drop .menu_drop_item:hover .submenu1 a,
+.menu .menu_item .menu_drop .menu_drop_item:hover .submenu2 a,
+.menu .menu_item .menu_drop .menu_drop_item:hover .submenu3 a,
+.menu_adaptive_link li:hover .menu_drop,
+.menu_adaptive_link .menu_drop li:hover .submenu {
   display: block;
 }
 
@@ -241,7 +231,6 @@ header {
   margin-top: 28px;
   margin-left: 32px;
   height: 25px;
-  width: 930px;
   z-index: 1;
 }
 
@@ -264,7 +253,7 @@ header {
 }
 
 .header nav input:focus {
-  width: 100%;
+  width: 930px;
   border-bottom: 1px solid #cccccc;
 }
 
@@ -276,6 +265,7 @@ header {
   right: 0;
   padding: 0;
   cursor: pointer;
+  z-index: 1;
 }
 
 .header nav button::before {
@@ -292,12 +282,9 @@ header {
   z-index: 10;
 }
 
-/* .header nav input:focus ~ .hide {
-  display: none;
-} */
-
 .menu_adapt {
   width: 100%;
+  z-index: 5;
 }
 
 .menu_adaptive {
@@ -318,19 +305,19 @@ header {
   padding: 15px 0px 14px 48px;
 }
 
-.menu_adaptive_link .menu_dropdown a {
+.menu_adaptive_link .menu_drop_link {
   text-transform: capitalize;
   background: #ffffff;
   font-weight: normal;
 }
 
-.menu_adaptive_link .menu_dropdown .menu_drop_bold {
+.menu_adaptive_link .menu_drop .menu_drop_bold {
   background: #f5f1eb;
   font-weight: bold;
   text-transform: none;
 }
 
-.menu_adaptive_link .menu_dropdown .submenu a {
+.menu_adaptive_link .menu_drop .submenu a {
   text-transform: none;
 }
 
@@ -374,13 +361,12 @@ header {
   line-height: 24px;
 }
 
-.block1_elem1 .block1_button {
+.block1_elem1 .button {
   height: 60px;
   margin-top: 30px;
 }
 
-.block1_elem1 .block1_button,
-.block1_elem3 .form1 button {
+.button {
   width: 300px;
   background: linear-gradient(105.11deg, #fe7866 -20.63%, #bf0330 128.14%);
   font-size: 18px;
@@ -390,12 +376,18 @@ header {
   cursor: pointer;
 }
 
-.block1_elem1 .block1_button:hover {
+.block1_elem1 .button:hover {
   transform: translate(-2px, -2px);
   box-shadow: 0px 10px 20px rgba(220, 90, 82, 0.5);
 }
 
-.block1_elem1 .block1_button:focus {
+.button:focus,
+.block1_elem3 .form1 input:focus,
+.block1_elem3 .form2 input:focus,
+.block1_elem3 .form2 .form_pos select:focus,
+.block1_elem3 .form2 .form_pos .block1_elem3_form option:focus,
+.btn_nav .btn_left:focus,
+.btn_nav .btn_right:focus {
   outline: none;
 }
 
@@ -424,38 +416,39 @@ header {
   z-index: 5;
   width: 70px;
   height: 70px;
+  background-image: url(../img/css_sprites.png);
 }
 
-.block1_elem2 .block1_elem2_links .vk {
-  background-image: url(../img/vk.png);
+.block1_elem2 .block1_elem2_links a.vk {
+  background-position: 0 0;
 }
 
-.block1_elem2 .block1_elem2_links .vk:hover {
-  background-image: url(../img/vk1.png);
+.block1_elem2 .block1_elem2_links a.vk:hover {
+  background-position: 0 -70px;
 }
 
-.block1_elem2 .block1_elem2_links .facebook {
-  background-image: url(../img/facebook.png);
+.block1_elem2 .block1_elem2_links a.fb {
+  background-position: 0 -140px;
 }
 
-.block1_elem2 .block1_elem2_links .facebook:hover {
-  background-image: url(../img/facebook1.png);
+.block1_elem2 .block1_elem2_links a.fb:hover {
+  background-position: 0 -210px;
 }
 
-.block1_elem2 .block1_elem2_links .odnoklassniki {
-  background-image: url(../img/odnoklassniki.png);
+.block1_elem2 .block1_elem2_links a.ok {
+  background-position: 0 -280px;
 }
 
-.block1_elem2 .block1_elem2_links .odnoklassniki:hover {
-  background-image: url(../img/odnoklassniki1.png);
+.block1_elem2 .block1_elem2_links a.ok:hover {
+  background-position: 0 -350px;
 }
 
-.block1_elem2 .block1_elem2_links .inst {
-  background-image: url(../img/instagram.svg);
+.block1_elem2 .block1_elem2_links a.ig {
+  background-position: 0 -420px;
 }
 
-.block1_elem2 .block1_elem2_links .inst:hover {
-  background-image: url(../img/instagram1.svg);
+.block1_elem2 .block1_elem2_links a.ig:hover {
+  background-position: 0 -490px;
 }
 
 .block1_elem3 {
@@ -506,7 +499,6 @@ header {
 .block1_elem3 .form2 .form_pos select:focus,
 .block1_elem3 .form2 .form_pos .block1_elem3_form option:focus,
 .block1_elem3 .form1 button:focus {
-  outline: none;
   border: 2px solid #dc5a52;
   border-radius: 2px;
 }
@@ -710,22 +702,17 @@ header {
   text-align: initial;
 }
 
-.block1 .block1_elem4 .btn_nav,
-.block3 .projects .slide .slide_nav {
+.btn_nav {
   display: none;
   position: absolute;
   top: 45%;
-  /* left: 250px;
-  right: 250px; */
   z-index: 2;
   left: 0;
   right: 0;
 }
 
-.block1 .block1_elem4 .btn_nav .btn_left,
-.block1 .block1_elem4 .btn_nav .btn_right,
-.block3 .projects .slide .slide_nav .btn_left,
-.block3 .projects .slide .slide_nav .btn_right {
+.btn_nav .btn_left,
+.btn_nav .btn_right {
   background: #dc5a52;
   opacity: 0.6;
   width: 50px;
@@ -734,20 +721,14 @@ header {
   cursor: pointer;
 }
 
-.block1 .block1_elem4 .btn_nav .btn_right,
-.block3 .projects .slide .slide_nav .btn_right {
+.btn_nav .btn_right {
   position: absolute;
   right: 0;
 }
 
 .block1 .block1_elem4 .block1_elem4_soldiers_slide:hover .btn_nav,
-.block3 .projects .slide .projects_slide:hover .slide_nav {
+.block3 .projects .slide .projects_slide:hover .btn_nav {
   display: block;
-}
-
-.block1 .block1_elem4 .btn_nav .btn_left:focus,
-.block1 .block1_elem4 .btn_nav .btn_right:focus {
-  outline: none;
 }
 
 .block2 {
@@ -773,44 +754,28 @@ header {
   font-family: "Gotham Pro Bold";
 }
 
-.block2 .bl2_el1 .logo2 {
-  margin-top: 25px;
+.block2 .bl2_el1 .logo {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
-.block2 .bl2_el1 .logo2 img {
+.block2 .bl2_el1 .logo img {
   width: 74px;
   height: 74px;
 }
 
-.block2 .bl2_el1 .logo2 .logo2_text {
-  color: #dc5a52;
-  text-align: left;
-  margin-left: 10px;
-}
-
-.block2 .bl2_el1 .logo2 .logo2_text h4 {
+.logo_text h4 {
   font-size: 28px;
   line-height: 27px;
   text-transform: uppercase;
-}
-
-.block2 .bl2_el1 .logo2 .logo2_text p {
-  font-size: 14px;
-  line-height: 13px;
+  margin: auto;
+  font-family: "Gotham Pro Bold";
 }
 
 .block2 .bl2_el1 .bl2_el1_p {
   font-size: 16px;
   line-height: 25px;
-}
-
-.block2 .bl2_el2,
-.block2 .bl2_el3,
-.block2 .bl2_el4 {
-  margin-top: 100px;
 }
 
 .block2 .bl2_el2 h4 {
@@ -847,7 +812,7 @@ header {
 
 .block2 .bl2_el3 .lane1 img,
 .block2 .bl2_el3 .lane2 img {
-  background: url(../img/Frame.png) bottom no-repeat;
+  background: url(../img/frame.png) bottom no-repeat;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -873,12 +838,11 @@ header {
   align-items: baseline;
 }
 
-.block1 .block1_elem4 .btn_nav,
+.btn_nav,
 .block2 .bl2_el3 .lane1 .work1 div,
 .block2 .bl2_el3 .lane1 .work2 div,
 .block2 .bl2_el3 .lane2 .work3 div,
 .block2 .bl2_el3 .lane2 .work4,
-.block3 .projects .slide .slide_nav,
 .block5 .partners .card_partner {
   transition: 0.5s;
 }
@@ -1260,10 +1224,8 @@ footer {
     font-size: 12px;
     line-height: 18px;
   }
-  .block1_elem1 .block1_button {
+  .block1_elem1 .button {
     width: 290px;
-    font-size: 14px;
-    line-height: 13px;
   }
   .block1_elem2 {
     background: none;
@@ -1295,10 +1257,10 @@ footer {
   .block1_elem3 .form1 input {
     width: calc(180px - 26px);
   }
+  .button,
   .block1_elem3 .form1 input,
   .block1_elem3 .form2 input,
   .block1_elem3 .form2 .form_pos select,
-  .block1_elem3 .form1 button,
   .block1_elem3 .form3 label,
   .block1_elem3 .block1_elem3_search,
   .block1 .block1_elem4 .soldier_head a,
@@ -1346,17 +1308,13 @@ footer {
     font-size: 12px;
     margin-top: 5px;
   }
-  .block1 .block1_elem4 .block1_elem4_soldiers_slide .btn_left,
-  .block1 .block1_elem4 .block1_elem4_soldiers_slide .btn_right,
-  .block3 .projects .slide .slide_nav .btn_left,
-  .block3 .projects .slide .slide_nav .btn_right {
+  .btn_nav .btn_left,
+  .btn_nav.btn_right {
     width: 25px;
     height: 25px;
   }
-  .block1 .block1_elem4 .block1_elem4_soldiers_slide .btn_left img,
-  .block1 .block1_elem4 .block1_elem4_soldiers_slide .btn_right img,
-  .block3 .projects .slide .slide_nav .btn_left img,
-  .block3 .projects .slide .slide_nav .btn_right img {
+  .btn_nav .btn_left img,
+  .btn_nav .btn_right img {
     width: 15px;
     vertical-align: middle;
   }
@@ -1566,7 +1524,7 @@ footer {
   .block1_elem1 .block1_elem1_p2 {
     margin: 0 auto;
   }
-  .block1_elem1 .block1_button {
+  .block1_elem1 .button {
     width: 330px;
     margin-top: 40px;
   }
@@ -1787,7 +1745,7 @@ footer {
   .block1_elem1 .block1_elem1_p2 {
     width: 100%;
   }
-  .block1_elem1 .block1_button {
+  .block1_elem1 .button {
     margin-top: 30px;
     width: 100%;
   }
@@ -1814,7 +1772,7 @@ footer {
     height: calc(60px - 6px);
     margin-bottom: 20px;
   }
-  .block1_elem3 .form1 button {
+  .block1_elem3 .form1 .button {
     left: 0;
     width: 100%;
     margin-left: 0;
@@ -1959,7 +1917,7 @@ footer {
     height: 30px;
   }
   .block1 .block1_elem4 .block1_elem4_soldiers_slide:hover .btn_nav,
-  .block3 .projects .slide .projects_slide:hover .slide_nav {
+  .block3 .projects .slide .projects_slide:hover .btn_nav {
     display: none;
   }
   .block4 {

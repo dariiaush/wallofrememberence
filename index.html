@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="./static/css/fontawesome-free-5.14.0-web/css/all.css" />
   <link rel="stylesheet" href="./static/css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -15,79 +16,77 @@
     <header>
       <div class="position">
         <div class="header">
-          <div class="head">
-            <div class="header_logo">
+          <div class="logo">
               <img src="./static/img/logo.svg" alt="logo" />
-            </div>
-            <div class="header_text">
-              <h1>Стена памяти</h1>
-              <p>Тюменская область</p>
+            <div class="logo_text">
+              <h4 class="logo_h">Стена памяти</h4>
+              <p class="logo_p">Тюменская область</p>
             </div>
           </div>
           <nav>
             <ul class="menu" id="menu-hide">
-              <li class="menu_item hide">
+              <li class="menu_item">
                 <a class="menu_link no-link" href="">О нас</a>
-                <ul class="menu_dropdown menu_dropdown_us hide">
-                  <li><a href="">История поискового движения</a></li>
-                  <li><a href="">Поисковые отряды</a></li>
-                  <li><a href="">Проекты</a></li>
-                  <li><a href="">Новости</a></li>
-                  <li><a href="">Контакты</a></li>
+                <ul class="menu_drop menu_drop1">
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">История поискового движения</a></li>
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Поисковые отряды</a></li>
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Проекты</a></li>
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Новости</a></li>
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Контакты</a></li>
                 </ul>
               </li>
-              <li class="menu_item hide">
+              <li class="menu_item">
                 <a class="menu_link" href="">Народный фотоархив</a>
               </li>
-              <li class="menu_item hide">
+              <li class="menu_item">
                 <a class="menu_link" href="">Книга памяти тюменской области</a>
               </li>
-              <li class="menu_item hide">
+              <li class="menu_item">
                 <a class="menu_link no-link" href="">Узнать судьбу солдата</a>
-                <ul class="menu_dropdown menu_dropdown_soldier hide">
-                  <li><a href="">Алгоритм поиска информации</a></li>
-                  <li><a href="">Оставить заявку на уточнение судьбы</a></li>
-                  <li><a href="">Ресурсы для поиска</a></li>
+                <ul class="menu_drop menu_drop2">
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Алгоритм поиска информации</a></li>
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Оставить заявку на уточнение судьбы</a></li>
+                  <li class="menu_drop_back"><a class="menu_drop_link" href="">Ресурсы для поиска</a></li>
                 </ul>
               </li>
-              <li class="menu_item drop_pos hide">
+              <li class="menu_item drop_pos">
                 <a class="menu_link no-link" href="">Материалы</a>
-                <ul class="menu_dropdown menu_dropdown_material hide">
-                  <li class="menu_dropdown_item">
-                    <a href="">Методические разработки по патриотическому воспитанию
-                      <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" />
+                <ul class="menu_drop menu_drop3">
+                  <li class="menu_drop_item menu_drop_back">
+                    <a class="menu_drop_link" href="">Методические разработки по патриотическому воспитанию
+                      <img class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" />
                     </a>
-                    <ul class="menu_dropdown_submenu submenu1">
-                      <li><a href="">Литературно-музыкальные композиции</a></li>
-                      <li><a href="">Игры и викторины</a></li>
-                      <li><a href="">Образовательные программы</a></li>
+                    <ul class="menu_drop_submenu submenu1">
+                      <li><a class="menu_drop_link" href="">Литературно-музыкальные композиции</a></li>
+                      <li><a class="menu_drop_link" href="">Игры и викторины</a></li>
+                      <li><a class="menu_drop_link" href="">Образовательные программы</a></li>
                     </ul>
                   </li>
-                  <li class="menu_dropdown_item">
-                    <a href="">Тюмень в годы Великой Отечественной войны
-                      <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" />
+                  <li class="menu_drop_item menu_drop_back">
+                    <a class="menu_drop_link" href="">Тюмень в годы Великой Отечественной войны
+                      <img class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" />
                     </a>
-                    <ul class="menu_dropdown_submenu submenu2">
-                      <li><a href="">Историческая справка</a></li>
+                    <ul class="menu_drop_submenu submenu2">
+                      <li><a class="menu_drop_link" href="">Историческая справка</a></li>
                       <li>
-                        <a href="">Реестр мемориальных зон Тюменской области</a>
+                        <a class="menu_drop_link" href="">Реестр мемориальных зон Тюменской области</a>
                       </li>
                     </ul>
                   </li>
-                  <li class="menu_dropdown_item">
-                    <a href="">Галерея
-                      <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" />
+                  <li class="menu_drop_item menu_drop_back">
+                    <a class="menu_drop_link" href="">Галерея
+                      <img class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" />
                     </a>
-                    <ul class="menu_dropdown_submenu submenu3">
-                      <li><a href="">Фотогалерея</a></li>
-                      <li><a href="">Видеогалерея</a></li>
-                      <li><a href="">Фронтовые альбомы</a></li>
-                      <li><a href="">Музыка</a></li>
+                    <ul class="menu_drop_submenu submenu3">
+                      <li><a class="menu_drop_link" href="">Фотогалерея</a></li>
+                      <li><a class="menu_drop_link" href="">Видеогалерея</a></li>
+                      <li><a class="menu_drop_link" href="">Фронтовые альбомы</a></li>
+                      <li><a class="menu_drop_link" href="">Музыка</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li class="menu_item menu_item_search">
+              <li class="menu_item menu_search">
               </li>
             </ul>
             <form>
@@ -99,9 +98,9 @@
         </div>
       </div>
       <div class="menu_adapt">
-        <ul class="menu_adaptive_link" id="menuadaptive" style="display: none">
-          <li><a href="#">О нас <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
-            <ul class="menu_dropdown">
+        <ul class="menu_adaptive_link menu_drop_back" id="menuadaptive" style="display: none">
+          <li><a href="#">О нас <img class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
+            <ul class="menu_drop">
               <li><a href="">История поискового движения</a></li>
               <li><a href="">Поисковые отряды</a></li>
               <li><a href="">Проекты</a></li>
@@ -109,23 +108,23 @@
               <li><a href="">Контакты</a></li>
             </ul>
           </li>
-          <li><a href="">Народный фотоархив <img class="menu_dropdown_arrow no-transform" src="./static/img/arrow.svg"
+          <li><a href="">Народный фотоархив <img class="menu_drop_arrow no-transform" src="./static/img/arrow.svg"
                 alt="arrow" /></a></li>
-          <li><a href="">Книга памяти тюменской области <img class="menu_dropdown_arrow no-transform"
+          <li><a href="">Книга памяти тюменской области <img class="menu_drop_arrow no-transform"
                 src="./static/img/arrow.svg" alt="arrow" /></a></li>
-          <li><a href="#">Узнать судьбу солдата <img class="menu_dropdown_arrow" src="./static/img/arrow.svg"
+          <li><a href="#">Узнать судьбу солдата <img class="menu_drop_arrow" src="./static/img/arrow.svg"
                 alt="arrow" /></a>
-            <ul class="menu_dropdown">
+            <ul class="menu_drop">
               <li><a href="">Алгоритм поиска информации</a></li>
               <li><a href="">Оставить заявку на уточнение судьбы</a></li>
               <li><a href="">Ресурсы для поиска</a></li>
             </ul>
           </li>
-          <li><a href="#">Материалы <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
-            <ul class="menu_dropdown">
+          <li><a href="#">Материалы <img class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
+            <ul class="menu_drop">
               <li>
                 <a class="menu_drop_bold" href="">Методические разработки по патриотическому воспитанию
-                  <img class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
+                  <img class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
                 <ul class="submenu">
                   <li><a href="">Литературно-музыкальные композиции</a></li>
                   <li><a href="">Игры и викторины</a></li>
@@ -134,7 +133,7 @@
               </li>
               <li>
                 <a class="menu_drop_bold" href="">Тюмень в годы Великой Отечественной войны <img
-                    class="menu_dropdown_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
+                    class="menu_drop_arrow" src="./static/img/arrow.svg" alt="arrow" /></a>
                 <ul class="submenu">
                   <li><a href="">Историческая справка</a></li>
                   <li>
@@ -143,7 +142,7 @@
                 </ul>
               </li>
               <li>
-                <a class="menu_drop_bold" href="">Галерея <img class="menu_dropdown_arrow" src="./static/img/arrow.svg"
+                <a class="menu_drop_bold" href="">Галерея <img class="menu_drop_arrow" src="./static/img/arrow.svg"
                     alt="arrow" /></a>
                 <ul class="submenu">
                   <li><a href="">Фотогалерея</a></li>
@@ -170,15 +169,15 @@
           <br />
           Вы можете добавить информацию о вашем родственнике в архив
         </p>
-        <button class="block1_button">Добавить человека</button>
+        <button class="button">Добавить человека</button>
       </div>
       <div class="block1_elem2">
         <img src="./static/img/fogperson.png" alt="fog" />
         <div class="block1_elem2_links">
           <a href="#" class="vk"></a>
-          <a href="#" class="facebook"></a>
-          <a href="#" class="odnoklassniki"></a>
-          <a href="#" class="inst"></a>
+          <a href="#" class="fb"></a>
+          <a href="#" class="ok"></a>
+          <a href="#" class="ig"></a>
         </div>
       </div>
       <div class="block1_elem3 position">
@@ -191,9 +190,9 @@
             <input type="text" class="block1_elem3_form" placeholder="Фамилия" /><input type="text"
               class="block1_elem3_form" placeholder="Имя" /><input type="text" class="block1_elem3_form"
               placeholder="Отчество" /><input type="text" class="block1_elem3_form" placeholder="Год рождения" />
-            <button class="block1_elem3_form_button">
+            <button class="button">
               Найти человека
-              <img src="./static/img/Vector.svg" alt="arrow" />
+              <img src="./static/img/vector.svg" alt="arrow" />
             </button>
           </div>
           <div class="form2">
@@ -284,9 +283,9 @@
     <div class="position">
       <div class="bl2_el1">
         <h4>О региональном проекте “Стена памяти”</h4>
-        <div class="logo2">
+        <div class="logo">
           <img src="./static/img/logo.svg" alt="logo" />
-          <div class="logo2_text">
+          <div class="logo_text">
             <h4>Стена памяти</h4>
             <p>Тюменская область</p>
           </div>
@@ -308,7 +307,7 @@
           мужественности и преданности Родине.
         </p>
       </div>
-      <div class="bl2_el2">
+      <div class="bl2_el2 head_marg2">
         <h4>Наше поисковое движение</h4>
         <div class="bl2_el2_content">
           <img src="./static/img/searchMovement.png" alt="searchMovement" />
@@ -340,7 +339,7 @@
           </p>
         </div>
       </div>
-      <div class="bl2_el3">
+      <div class="bl2_el3 head_marg2">
         <h4>Направления работы</h4>
         <div class="lane1">
           <div class="work1">
@@ -394,7 +393,7 @@
           </div>
         </div>
       </div>
-      <div class="bl2_el4">
+      <div class="bl2_el4 head_marg2">
         <h4>О нашей работе в цифрах</h4>
         <div class="numbers1">
           <div class="digit1"><div>
@@ -471,7 +470,7 @@
                 </p>
                 <button class="card_btn">
                   Подробнее
-                  <img src="./static/img/Vector1.svg" alt="arrow" />
+                  <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
@@ -483,7 +482,7 @@
                 <p class="card_p_hover">Выездная школа реставратора</p>
                 <button class="card_btn">
                   Подробнее
-                  <img src="./static/img/Vector1.svg" alt="arrow" />
+                  <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
@@ -495,19 +494,18 @@
                 <p class="card_p_hover">Летние выездные сборы</p>
                 <button class="card_btn">
                   Подробнее
-                  <img src="./static/img/Vector1.svg" alt="arrow" />
+                  <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
           </div>
-          <div class="slide_nav">
+          <div class="btn_nav">
             <button class="btn_left">
               <img src="./static/img/arrowleft.svg" alt="leftArrow" />
             </button>
             <button class="btn_right">
               <img src="./static/img/arrowright.svg" alt="rightArrow" />
             </button>
-          </div>
         </div>
       </div>
     </div>
@@ -523,7 +521,7 @@
                   Всероссийский Волонтерский корпус 70-летия Победы
                 </p>
                 <button class="card_btn">
-                  Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                  Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
@@ -537,7 +535,7 @@
                   отрядов
                 </p>
                 <button class="card_btn">
-                  Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                  Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
@@ -551,21 +549,21 @@
                   России» в Уральском федеральном округе
                 </p>
                 <button class="card_btn">
-                  Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                  Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
           </div>
-          <div class="slide_nav">
+          <div class="btn_nav">
             <button class="btn_left">
               <img src="./static/img/arrowleft.svg" alt="leftArrow" />
             </button>
             <button class="btn_right">
               <img src="./static/img/arrowright.svg" alt="rightArrow" />
             </button>
-          </div>
         </div>
       </div>
+    </div>
     </div>
     <div class="projects">
       <h2 class="position head_marg2">Музейная работа</h2>
@@ -580,7 +578,7 @@
                   ПАМЯТИ»
                 </p>
                 <button class="card_btn">
-                  Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                  Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
@@ -593,7 +591,7 @@
                   Областной заочный конкурс «Нам дороги эти позабыть нельзя!»
                 </p>
                 <button class="card_btn">
-                  Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                  Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
@@ -606,21 +604,22 @@
                   Акция «Имя твое неизвестно, подвиг твой бессмертен»
                 </p>
                 <button class="card_btn">
-                  Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                  Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
                 </button>
               </div>
             </a>
           </div>
-          <div class="slide_nav">
+          <div class="btn_nav">
             <button class="btn_left">
               <img src="./static/img/arrowleft.svg" alt="leftArrow" />
             </button>
             <button class="btn_right">
               <img src="./static/img/arrowright.svg" alt="rightArrow" />
             </button>
-          </div>
+        </div>
         </div>
       </div>
+  </div>
     </div>
   </div>
   <div class="block4">
@@ -643,7 +642,7 @@
               </div>
               <p class="hidden_text"></p>
               <button class="card_btn">
-                Подробнее <img src="./static/img/Vector.svg" alt="arrow" />
+                Подробнее <img src="./static/img/vector.svg" alt="arrow" />
               </button>
             </div>
           </a>
@@ -667,7 +666,7 @@
                 в годы Великой Отечественной войны.
               </p>
               <button class="card_btn">
-                Подробнее <img src="./static/img/Vector.svg" alt="arrow" />
+                Подробнее <img src="./static/img/vector.svg" alt="arrow" />
               </button>
             </div>
           </a>
@@ -687,7 +686,7 @@
               </div>
               <p class="hidden_small"></p>
               <button class="card_btn">
-                Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
               </button>
             </div>
           </a>
@@ -710,7 +709,7 @@
                 истории поискового дви...
               </p>
               <button class="card_btn">
-                Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
               </button>
             </div>
           </a>
@@ -728,7 +727,7 @@
               </div>
               <p class="hidden_small"></p>
               <button class="card_btn">
-                Подробнее <img src="./static/img/Vector1.svg" alt="arrow" />
+                Подробнее <img src="./static/img/vector1.svg" alt="arrow" />
               </button>
             </div>
           </a>
